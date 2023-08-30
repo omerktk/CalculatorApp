@@ -1,0 +1,5 @@
+<div>
+  <h1>Calculator App</h1>
+  <app-login *ngIf="!(authService.isLoggedIn | async)"></app-login>
+  <app-calculator *ngIf="authService.isLoggedIn | async"></app-calculator>
+</div>
