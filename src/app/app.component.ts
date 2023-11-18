@@ -9,4 +9,8 @@ import { AuthService } from './auth.service';
 export class AppComponent {
   title = 'CalculatorApp';
   constructor(public authService: AuthService) {}
+
+  ngOnInit() {
+    this.authService.initLoginState();
+  }
 }
